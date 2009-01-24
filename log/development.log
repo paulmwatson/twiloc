@@ -1858,3 +1858,550 @@ Processing LocalController#index (for 127.0.0.1 at 2009-01-24 01:07:16) [GET]
   Parameters: {"city"=>"dublin", "country"=>"ie"}
 Rendering local/index
 Completed in 1046ms (View: 15, DB: 0) | 200 OK [http://127.0.0.1/local/ie/dublin]
+
+
+Processing LocalController#index (for 127.0.0.1 at 2009-01-24 09:24:36) [GET]
+  Parameters: {"city"=>"dublin", "country"=>"ie"}
+Rendering local/index
+Completed in 1470ms (View: 39, DB: 0) | 200 OK [http://127.0.0.1/local/ie/dublin]
+
+
+Processing LocalController#index (for 127.0.0.1 at 2009-01-24 09:25:45) [GET]
+  Parameters: {"city"=>"portlairge", "country"=>"ie"}
+
+
+OpenURI::HTTPError (400 Bad Request):
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:278:in `open_http'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:617:in `buffer_open'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:164:in `open_loop'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:162:in `catch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:162:in `open_loop'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:132:in `open_uri'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:519:in `open'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:30:in `open'
+    /app/controllers/local_controller.rb:15:in `index'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `perform_action_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:617:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.2.2/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/session_management.rb:134:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:392:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.2.2/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_trace (35.4ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_request_and_response (0.9ms)
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing LocalController#index (for 127.0.0.1 at 2009-01-24 09:26:02) [GET]
+  Parameters: {"city"=>"portlairge", "country"=>"ie"}
+
+
+OpenURI::HTTPError (400 Bad Request):
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:278:in `open_http'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:617:in `buffer_open'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:164:in `open_loop'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:162:in `catch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:162:in `open_loop'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:132:in `open_uri'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:519:in `open'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:30:in `open'
+    /app/controllers/local_controller.rb:15:in `index'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `perform_action_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:617:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.2.2/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/session_management.rb:134:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:392:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.2.2/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_trace (35.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_request_and_response (0.9ms)
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing LocalController#index (for 127.0.0.1 at 2009-01-24 09:26:07) [GET]
+  Parameters: {"city"=>"waterford", "country"=>"ie"}
+Rendering local/index
+Completed in 1344ms (View: 37, DB: 0) | 200 OK [http://127.0.0.1/local/ie/waterford]
+
+
+Processing LocalController#index (for 127.0.0.1 at 2009-01-24 09:49:51) [GET]
+  Parameters: {"city"=>"london", "country"=>"uk"}
+Rendering local/index
+Completed in 1094ms (View: 15, DB: 0) | 200 OK [http://127.0.0.1/local/uk/london]
+
+
+Processing LocalController#index (for 127.0.0.1 at 2009-01-24 09:50:35) [GET]
+  Parameters: {"city"=>"chicago", "country"=>"us"}
+Rendering local/index
+Completed in 882ms (View: 15, DB: 0) | 200 OK [http://127.0.0.1/local/us/chicago]
+
+
+Processing LocalController#index (for 127.0.0.1 at 2009-01-24 09:50:49) [GET]
+  Parameters: {"city"=>"la", "country"=>"us"}
+Rendering local/index
+Completed in 939ms (View: 106, DB: 0) | 200 OK [http://127.0.0.1/local/us/la]
+
+
+Processing LocalController#index (for 127.0.0.1 at 2009-01-24 09:51:01) [GET]
+  Parameters: {"city"=>"durban", "country"=>"za"}
+Rendering local/index
+Completed in 1157ms (View: 15, DB: 0) | 200 OK [http://127.0.0.1/local/za/durban]
+
+
+Processing LocalController#index (for 127.0.0.1 at 2009-01-24 09:51:20) [GET]
+  Parameters: {"city"=>"capetown", "country"=>"za"}
+Rendering local/index
+Completed in 1034ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/local/za/capetown]
+
+
+Processing LocalController#index (for 127.0.0.1 at 2009-01-24 09:51:31) [GET]
+  Parameters: {"city"=>"dublin", "country"=>"ie"}
+Rendering local/index
+Completed in 777ms (View: 15, DB: 0) | 200 OK [http://127.0.0.1/local/ie/dublin]
+
+
+Processing LocalController#index (for 127.0.0.1 at 2009-01-24 09:55:03) [GET]
+  Parameters: {"city"=>"dublin", "country"=>"ie"}
+Rendering local/index
+Completed in 1064ms (View: 16, DB: 0) | 200 OK [http://127.0.0.1/local/ie/dublin]
+
+
+Processing LocalController#index (for 127.0.0.1 at 2009-01-24 09:55:13) [GET]
+  Parameters: {"city"=>"dublin", "country"=>"ie"}
+Rendering local/index
+Completed in 789ms (View: 15, DB: 0) | 200 OK [http://127.0.0.1/local/ie/dublin]
+
+
+Processing LocalController#index (for 127.0.0.1 at 2009-01-24 09:55:45) [GET]
+  Parameters: {"city"=>"dublin", "country"=>"ie"}
+Rendering local/index
+Completed in 800ms (View: 15, DB: 0) | 200 OK [http://127.0.0.1/local/ie/dublin]
+
+
+Processing LocalController#index (for 127.0.0.1 at 2009-01-24 09:56:04) [GET]
+  Parameters: {"city"=>"dublin", "country"=>"ie"}
+Rendering local/index
+Completed in 965ms (View: 16, DB: 0) | 200 OK [http://127.0.0.1/local/ie/dublin]
+
+
+Processing LocalController#index (for 127.0.0.1 at 2009-01-24 09:56:24) [GET]
+  Parameters: {"city"=>"dublin", "country"=>"ie"}
+Rendering local/index
+Completed in 768ms (View: 16, DB: 0) | 200 OK [http://127.0.0.1/local/ie/dublin]
+
+
+Processing LocalController#index (for 127.0.0.1 at 2009-01-24 09:56:47) [GET]
+  Parameters: {"city"=>"dublin", "country"=>"ie"}
+Rendering local/index
+Completed in 784ms (View: 15, DB: 0) | 200 OK [http://127.0.0.1/local/ie/dublin]
+
+
+Processing LocalController#index (for 127.0.0.1 at 2009-01-24 09:56:56) [GET]
+  Parameters: {"city"=>"dublin", "country"=>"ie"}
+Rendering local/index
+Completed in 850ms (View: 115, DB: 0) | 200 OK [http://127.0.0.1/local/ie/dublin]
+
+
+Processing LocalController#index (for 127.0.0.1 at 2009-01-24 16:21:53) [GET]
+  Parameters: {"city"=>"dublin", "country"=>"ie"}
+Rendering local/index
+Completed in 930ms (View: 40, DB: 0) | 200 OK [http://127.0.0.1/local/ie/dublin]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-01-24 16:22:48) [GET]
+
+
+NoMethodError (undefined method `except' for "/local/ie/dublin":String):
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/builder.rb:56:in `divide_route_options'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/builder.rb:163:in `build'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:263:in `add_route'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:271:in `add_named_route'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:31:in `named_route'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:27:in `root'
+    /config/routes.rb:42
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:210:in `draw'
+    /config/routes.rb:1
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:255:in `load_routes!'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:236:in `load!'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:250:in `reload'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:148:in `reload_application'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/callbacks.rb:178:in `send'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/callbacks.rb:178:in `evaluate_method'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/callbacks.rb:166:in `call'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/callbacks.rb:90:in `run'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/callbacks.rb:90:in `each'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/callbacks.rb:90:in `send'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/callbacks.rb:90:in `run'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/callbacks.rb:277:in `run_callbacks'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:109:in `dispatch_unlocked'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.2.2/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_trace (33.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_request_and_response (0.7ms)
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing LocalController#index (for 127.0.0.1 at 2009-01-24 16:23:22) [GET]
+  Parameters: {"city"=>"dublin", "country"=>"ie"}
+Rendering local/index
+Completed in 1487ms (View: 16, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing LocalController#index (for 127.0.0.1 at 2009-01-24 17:18:11) [GET]
+  Parameters: {"city"=>"dublin", "country"=>"ie"}
+Rendering local/index
+Completed in 1060ms (View: 14, DB: 0) | 200 OK [http://127.0.0.1/local/ie/dublin]
+
+
+Processing LocalController#index (for 127.0.0.1 at 2009-01-24 17:21:34) [GET]
+  Parameters: {"city"=>"dublin", "country"=>"ireland"}
+Rendering local/index
+Completed in 1032ms (View: 105, DB: 0) | 200 OK [http://127.0.0.1/local/ireland/dublin]
+
+
+Processing LocalController#index (for 127.0.0.1 at 2009-01-24 17:21:41) [GET]
+  Parameters: {"city"=>"dublin", "country"=>"ireland"}
+Rendering local/index
+Completed in 1185ms (View: 16, DB: 0) | 200 OK [http://127.0.0.1/local/ireland/dublin]
+
+
+Processing LocalController#index (for 127.0.0.1 at 2009-01-24 17:25:10) [GET]
+  Parameters: {"city"=>"dublin", "country"=>"ireland"}
+Rendering local/index
+Completed in 1436ms (View: 14, DB: 0) | 200 OK [http://127.0.0.1/local/ireland/dublin]
+
+
+Processing LocalController#index (for 127.0.0.1 at 2009-01-24 17:25:46) [GET]
+  Parameters: {"city"=>"dublin", "country"=>"ireland"}
+Rendering local/index
+Completed in 875ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/local/ireland/dublin]
+
+
+Processing LocalController#index (for 127.0.0.1 at 2009-01-24 17:26:23) [GET]
+  Parameters: {"city"=>"dublin", "country"=>"ireland"}
+Rendering local/index
+Completed in 924ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/local/ireland/dublin]
+
+
+Processing LocalController#index (for 127.0.0.1 at 2009-01-24 17:27:25) [GET]
+  Parameters: {"city"=>"dublin", "country"=>"ireland"}
+Rendering local/index
+Completed in 985ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/local/ireland/dublin]
+
+
+Processing LocalController#index (for 127.0.0.1 at 2009-01-24 17:27:36) [GET]
+  Parameters: {"city"=>"dublin", "country"=>"ireland"}
+Rendering local/index
+Completed in 929ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/local/ireland/dublin]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-01-24 20:12:23) [GET]
+  Parameters: {"city"=>"dublin", "country"=>"ie"}
+
+
+NameError (uninitialized constant SiteController):
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:445:in `load_missing_constant'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:77:in `const_missing'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:89:in `const_missing'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/inflector.rb:352:in `constantize'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/inflector.rb:351:in `each'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/inflector.rb:351:in `constantize'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/core_ext/string/inflections.rb:162:in `constantize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:388:in `recognize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.2.2/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_trace (24.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_request_and_response (0.8ms)
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing SiteController#index (for 127.0.0.1 at 2009-01-24 20:14:26) [GET]
+Redirected to /local/ireland/dublin/
+Completed in 2ms (DB: 0) | 302 Found [http://127.0.0.1/]
+
+
+Processing LocalController#index (for 127.0.0.1 at 2009-01-24 20:14:26) [GET]
+  Parameters: {"city"=>"dublin", "country"=>"ireland"}
+Rendering local/index
+Completed in 1668ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/local/ireland/dublin/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2009-01-24 20:15:07) [GET]
+Redirected to /local/ireland/dublin/
+Completed in 2ms (DB: 0) | 302 Found [http://127.0.0.1/]
+
+
+Processing LocalController#index (for 127.0.0.1 at 2009-01-24 20:15:07) [GET]
+  Parameters: {"city"=>"dublin", "country"=>"ireland"}
+Rendering local/index
+Completed in 1382ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/local/ireland/dublin/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2009-01-24 20:15:20) [GET]
+Redirected to /local/ireland/dublin/
+Completed in 2ms (DB: 0) | 302 Found [http://127.0.0.1/]
+
+
+Processing LocalController#index (for 127.0.0.1 at 2009-01-24 20:15:20) [GET]
+  Parameters: {"city"=>"dublin", "country"=>"ireland"}
+Rendering local/index
+Completed in 1850ms (View: 16, DB: 0) | 200 OK [http://127.0.0.1/local/ireland/dublin/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2009-01-24 20:15:56) [GET]
+Redirected to /local/ireland/dublin/
+Completed in 3ms (DB: 0) | 302 Found [http://127.0.0.1/]
+
+
+Processing LocalController#index (for 127.0.0.1 at 2009-01-24 20:15:56) [GET]
+  Parameters: {"city"=>"dublin", "country"=>"ireland"}
+Rendering local/index
+Completed in 1302ms (View: 14, DB: 0) | 200 OK [http://127.0.0.1/local/ireland/dublin/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2009-01-24 20:16:02) [GET]
+Redirected to /local/ireland/dublin/
+Completed in 2ms (DB: 0) | 302 Found [http://127.0.0.1/]
+
+
+Processing LocalController#index (for 127.0.0.1 at 2009-01-24 20:16:02) [GET]
+  Parameters: {"city"=>"dublin", "country"=>"ireland"}
+Rendering local/index
+Completed in 844ms (View: 16, DB: 0) | 200 OK [http://127.0.0.1/local/ireland/dublin/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2009-01-24 20:16:19) [GET]
+Redirected to /local/ireland/dublin/
+Completed in 2ms (DB: 0) | 302 Found [http://127.0.0.1/]
+
+
+Processing LocalController#index (for 127.0.0.1 at 2009-01-24 20:16:19) [GET]
+  Parameters: {"city"=>"dublin", "country"=>"ireland"}
+Rendering local/index
+Completed in 1339ms (View: 16, DB: 0) | 200 OK [http://127.0.0.1/local/ireland/dublin/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2009-01-24 20:16:39) [GET]
+Redirected to /local/ireland/dublin/
+Completed in 2ms (DB: 0) | 302 Found [http://127.0.0.1/]
+
+
+Processing LocalController#index (for 127.0.0.1 at 2009-01-24 20:16:39) [GET]
+  Parameters: {"city"=>"dublin", "country"=>"ireland"}
+Rendering local/index
+Completed in 885ms (View: 13, DB: 0) | 200 OK [http://127.0.0.1/local/ireland/dublin/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2009-01-24 20:16:49) [GET]
+Redirected to /local/ireland/dublin/
+Completed in 2ms (DB: 0) | 302 Found [http://127.0.0.1/]
+
+
+Processing LocalController#index (for 127.0.0.1 at 2009-01-24 20:16:49) [GET]
+  Parameters: {"city"=>"dublin", "country"=>"ireland"}
+Rendering local/index
+Completed in 815ms (View: 15, DB: 0) | 200 OK [http://127.0.0.1/local/ireland/dublin/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2009-01-24 20:16:59) [GET]
+Redirected to /local/ireland/dublin/
+Completed in 3ms (DB: 0) | 302 Found [http://127.0.0.1/]
+
+
+Processing LocalController#index (for 127.0.0.1 at 2009-01-24 20:16:59) [GET]
+  Parameters: {"city"=>"dublin", "country"=>"ireland"}
+Rendering local/index
+Completed in 1062ms (View: 15, DB: 0) | 200 OK [http://127.0.0.1/local/ireland/dublin/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2009-01-24 20:17:14) [GET]
+Redirected to /local/ireland/dublin/
+Completed in 2ms (DB: 0) | 302 Found [http://127.0.0.1/]
+
+
+Processing LocalController#index (for 127.0.0.1 at 2009-01-24 20:17:14) [GET]
+  Parameters: {"city"=>"dublin", "country"=>"ireland"}
+Rendering local/index
+Completed in 944ms (View: 15, DB: 0) | 200 OK [http://127.0.0.1/local/ireland/dublin/]
