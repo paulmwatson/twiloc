@@ -1,0 +1,38 @@
+<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAA9SzHqWj0pnvSzhwOX1yFCxRi_j0U6kJrkFvY4-OX2XYmEAa76BQoL8QspDxJ5P8mp_l47CViQ68m1w" type="text/javascript"></script>
+<script type="text/javascript">
+
+//<![CDATA[
+
+function load() {
+  if (GBrowserIsCompatible()) {
+    var map = new GMap2(document.getElementById("map"));
+    map.setCenter(new GLatLng(<%= @lat %>, <%= @long %>), 10);
+  }
+}
+
+//]]>
+</script>
+
+
+<p>country == <%= @country %></p>
+<p>city == <%= @city %></p>
+
+<p><a href="<%= @location_url %>">Yahoo! Map URL</a></p>
+
+<p>latitude == <%= @lat %></p>
+<p>longitude == <%= @long %></p>
+<p><a href="<%= @map_url %>">Google Maps URL</a></p>
+<div id="map" style="width:250px;height:250px"></div>
+<script type="text/javascript">load();</script>
+
+<p><a href="<%= @twitter_geo_search_url %>">Twitter Geo Search URL</a></p>
+
+<p>Tweets == <%= @tweets.length %></p>
+<ul>
+  <% @tweets.each do |tweet| %>
+  <li>
+    <a href="<%= tweet.search('//link')[0].attributes['href'] %>"><%= tweet.search('//name').text %></a>
+    <p><%= tweet.search('//title').text %></p>
+  </li>
+  <% end %>
+</ul>
