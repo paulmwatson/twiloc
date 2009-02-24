@@ -1,0 +1,8 @@
+<div class="navbar">
+  <h1>Countries</h1>
+</div>
+<ul>
+  <% @countries.each do |country|%>
+  <li><a target="_top" href="/local/<%= country.name %>"><%= country.name %></a></li>
+  <% end %>
+</ul>

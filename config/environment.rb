@@ -73,3 +73,5 @@ Rails::Initializer.run do |config|
   # Please note that observers generated using script/generate observer need to have an _observer suffix
   # config.active_record.observers = :cacher, :garbage_collector, :forum_observer
 end
+
+YAHOO_APP_ID = 'fxHTUTrV34EJvDAsVTomfVNKsl4iJkEhb.6D9F5Q0ni3SGCJcYBQcVG1QrMO_Ed4nEY5'

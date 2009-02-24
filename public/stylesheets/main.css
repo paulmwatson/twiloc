@@ -1,0 +1,76 @@
+html, body
+{
+  font-family: Helvetica;
+}
+
+h1
+{
+  font-size: 20px;
+  background-repeat: repeat-x;
+  height: 45px;
+  margin: 0;
+  color: #fff;
+  display: block;
+  font-weight: normal;
+  line-height: 45px;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+.navbar
+{
+  background-image: url(/images/tbbg.png);
+  height: 44px;
+  width: 100%;
+}
+
+.navbar .back
+{
+  background-image: url(/images/bkl.png);
+  background-repeat: repeat-x;
+  display: block;
+  float: left;
+  line-height: 45px;
+  height: 45px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  padding-left: 20px;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.navbar .back img
+{
+  vertical-align: top;
+  padding-left: 10px;
+}
+
+h1
+{
+  text-align: center;
+  color: #fff;
+}
+
+ul, ul li
+{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+ul
+{
+  margin-top: 1px;
+}
+
+ul li a
+{
+  border-bottom: solid 1px #ccc;
+  color: #333;
+  display: block;
+  text-decoration: none;
+  line-height: 36px;
+  padding: 3px 10px 0 10px;
+}

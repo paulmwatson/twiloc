@@ -1,0 +1,16 @@
+<div class="navbar">
+  <a target="_top" class="back" href="/ %>">Countries<img src="/images/bkr.png" /></a>
+  <h1>Add Country</h1>
+</div>
+<%= error_messages_for :country %>
+
+<% form_tag do %>
+  <p>
+    <b>Country:</b><br />
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>

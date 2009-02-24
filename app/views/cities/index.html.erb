@@ -1,0 +1,9 @@
+<div class="navbar">
+  <a target="_top" class="back" href="/">Countries<img src="/images/bkr.png" /></a>
+  <h1><%= params[:country] %></h1>
+</div>
+<ul>
+  <% @cities.each do |city|%>
+  <li><a target="_top" href="/local/<%= params[:country] %>/<%= city.name %>"><%= city.name %></a></li>
+  <% end %>
+</ul>

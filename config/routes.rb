@@ -1,5 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
-  map.connect 'local/:country/:city', :controller => 'local'
+  map.connect '/local/:country/:city', :controller => 'tweets'
+  map.connect '/local/:country', :controller => 'cities'
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:
@@ -39,7 +40,7 @@ ActionController::Routing::Routes.draw do |map|
   # Install the default routes as the lowest priority.
   # Note: These default routes make all actions in every controller accessible via GET requests. You should
   # consider removing the them or commenting them out if you're using named routes and resources.
-  map.root :controller => 'site', :action => 'index'
+  map.root :controller => 'countries', :action => 'index'
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
 end

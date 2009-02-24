@@ -1,0 +1,12 @@
+<div class="navbar">
+  <a target="_top" class="back" href="/local/<%= params[:country] %>">Cities<img src="/images/bkr.png" /></a>
+  <h1><%= params[:country] %>, <%= params[:city] %></h1>
+</div>
+<ul id="tweets">
+  <% @tweets.each do |tweet| %>
+  <li>
+    <a href="<%= tweet.search('//link')[0].attributes['href'] %>"><%= tweet.search('//name').text %></a>
+    <p><%= tweet.search('//title').text %></p>
+  </li>
+  <% end %>
+</ul>
