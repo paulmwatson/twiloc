@@ -9,8 +9,8 @@ class TweetsController < ApplicationController
     # Google Maps http://code.google.com/apis/maps/documentation/introduction.html
     
     app_id = 'fxHTUTrV34EJvDAsVTomfVNKsl4iJkEhb.6D9F5Q0ni3SGCJcYBQcVG1QrMO_Ed4nEY5'
-    @country = params[:country]
-    @city = params[:city]
+    @country = params[:country].gsub(' ', '%20')
+    @city = params[:city].gsub(' ', '%20')
     @location_url = "http://local.yahooapis.com/MapsService/V1/geocode?appid=#{app_id}&country=#{@country}&city=#{@city}"
     
     @geo_doc = open(@location_url) { |f| Hpricot(f) }
