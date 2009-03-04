@@ -7575,3 +7575,10 @@ Processing TweetsController#index (for 127.0.0.1 at 2009-03-01 22:26:16) [GET]
 Rendering template within layouts/base
 Rendering tweets/index
 Completed in 1129ms (View: 14, DB: 0) | 200 OK [http://127.0.0.1/local/South%20Africa/Cape%20Town]
+
+
+Processing CountriesController#index (for 127.0.0.1 at 2009-03-04 20:33:38) [GET]
+  [4;36;1mCountry Load (1.6ms)[0m   [0;1mSELECT * FROM "countries" ORDER BY name[0m
+Rendering template within layouts/base
+Rendering countries/index
+Completed in 25ms (View: 18, DB: 2) | 200 OK [http://127.0.0.1/]
